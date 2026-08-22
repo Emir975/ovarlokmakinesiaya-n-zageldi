@@ -2,10 +2,9 @@
 <html lang="tr">
 <head> 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ses Çalan Buton</title>
     <style>
-        /* Sitenin ve butonun tam ortada durmasını sağlayan CSS */
         body {
             font-family: sans-serif;
             background-color: #f0f2f5;
@@ -37,11 +36,16 @@
 </head>
 <body>
 
-    <button class="ses-butonu" onlick="sesiCal()">Ğ Sesi Çal</head>button>
+    <button class="ses-butonu" onlick="sesiCal()">♫ Sesi Çal</head>button>
 
     <audio id="benimSesim" src="https://mixkit.co"></audio>
 
     <script> 
+        function sesiCal() {
+            var ses = document.getElementById("benimSesim");
+            ses.play();
+        }
+    </script>
 
-</body> 
+</body>
 </html>
