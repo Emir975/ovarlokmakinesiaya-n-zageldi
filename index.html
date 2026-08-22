@@ -1,15 +1,47 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
+<head> 
     <meta charset="UTF-8">
-    <title>Benim İlk Ücretsiz Sitem</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0>
+    <title>Ses Çalan Buton</title>
     <style>
-        body { font-family: sans-serif; text-align: center; background-color: #f0f2f5; padding: 50px; }
-        h1 { color: #007bff; }
+        /* Sitenin ve butonun tam ortada durmasını sağlayan CSS */
+        body {
+            font-family: sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            aling-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        /* Butonun tasarımı */
+        .ses-butonu {
+            padding: 20px 40px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+            transition: transform 0.2s, background-color 0.2s;
+        }
+        /* Fare üzerine geldiğinde botunun rengi değişir */
+        .ses-butonu:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body>
-    <h1>Merhaba Dünya!</h1>
-    <p>Bu siteyi GitHub Pages ile tamamen ücretsiz olarak açtım.</p>
-</body>
+
+    <button class="ses-butonu" onlick="sesiCal()">  Sesi Çal</head>button>
+
+    <audio id="benimSesim" src="https://mixkit.co"></audio>
+
+    <script> 
+
+</body> 
 </html>
